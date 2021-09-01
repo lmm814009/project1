@@ -28,7 +28,7 @@
 <div class="banner">
   <div class="container">
     <div class="banner-info">
-      <h1>Promise-Desert 2020 早春系列<br><span>看得清，才能看得遠</span></h1>
+      <h1 data-aos="fade-up">Promise-Desert 2020 早春系列<br><span>看得清，才能看得遠</span></h1>
     </div>
   </div>
 </div>
@@ -38,22 +38,22 @@
     <div class="icon content">
       <ul>
         <li>
-          <img src="assets/images/icon-dollar.svg" alt="icon-dollar.svg">
+          <img data-aos="fade-up" src="assets/images/icon-dollar.svg" alt="icon-dollar.svg">
           <h3>單一價格</h3>
           <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
         </li>
         <li>
-          <img src="assets/images/icon-clock.svg" alt="icon-clock.svg">
+          <img data-aos="fade-up" src="assets/images/icon-clock.svg" alt="icon-clock.svg">
           <h3>20 分鐘即可取件</h3>
           <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
         </li>
         <li>
-          <img src="assets/images/icon-heart.svg" alt="icon-heart.svg">
+          <img data-aos="fade-up" src="assets/images/icon-heart.svg" alt="icon-heart.svg">
           <h3>安心售後服務</h3>
           <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
         </li>
         <li>
-          <img src="assets/images/icon-glasses.svg" alt="icon-glasses.svg">
+          <img data-aos="fade-up" src="assets/images/icon-glasses.svg" alt="icon-glasses.svg">
           <h3>關於鏡片</h3>
           <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
         </li>
@@ -65,21 +65,21 @@
   <div class="container content">
     <h2 class="title">經典系列鏡框</h2>
     <ul class="product-list">
-      <li>
+      <li data-aos="fade-left">
         <img src="assets/images/product-1.png" alt="product-1.png">
         <div class="pro-info">
           <img src="assets/images/icon-diamond.svg" alt="icon-diamond.svg">
           <h3>optical</h3>
         </div> 
       </li>
-      <li>
+      <li data-aos="fade-left">
         <div class="pro-info">
           <img src="assets/images/icon-sun.svg" alt="icon-sun.svg">
           <h3>sunglasses</h3>
         </div> 
         <img src="assets/images/product-2.png" alt="product-2.png">
       </li>
-      <li>
+      <li data-aos="fade-left">
         <img src="assets/images/product-3.png" alt="product-3.png">
         <div class="pro-info">
           <img src="assets/images/icon-thunder.svg" alt="icon-thunder.svg">
@@ -95,12 +95,12 @@
     <ul class="products-list">
       <li>
         <div class="products-image products-image1">
-          <h4>Double A+</h4>
+          <h4 data-aos="fade-down">Double A+</h4>
         </div>        
       </li>
       <li>
         <div class="products-image products-image2">
-          <h4>YOUTH</h4>
+          <h4 data-aos="fade-down">YOUTH</h4>
         </div>
       </li>
     </ul>
@@ -110,7 +110,7 @@
   <div class="container content">
     <h2 class="title">顧客推薦</h2>
     <ul class="rec-list">
-      <li>
+      <li data-aos="fade-up">
         <img src="assets/images/rec-1.png" alt="rec-1.png">
         <div class="rec-info">
           <div class="rec-txt">
@@ -120,7 +120,7 @@
           <h5 class="date">2021/06/20</h5>  
         </div>
       </li>
-      <li>
+      <li data-aos="fade-up">
         <img src="assets/images/rec-2.png" alt="rec-2.png">
         <div class="rec-info">
             <div class="rec-txt">
@@ -130,7 +130,7 @@
           <h5 class="date">2021/06/20</h5>
         </div>
       </li>
-      <li>
+      <li data-aos="fade-up">
         <img src="assets/images/rec-3.png" alt="rec-3.png">
         <div class="rec-info">
           <div class="rec-txt">
@@ -140,7 +140,7 @@
           <h5 class="date">2021/06/20</h5>
         </div>
       </li>
-      <li>
+      <li data-aos="fade-up">
         <img src="assets/images/rec-4.png" alt="rec-4.png">
         <div class="rec-info">
           <div class="rec-txt">
@@ -222,6 +222,32 @@
     </div>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+   AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
 </body>
 
 </html>
